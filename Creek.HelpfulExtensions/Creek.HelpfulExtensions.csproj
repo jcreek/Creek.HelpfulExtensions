@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Josh Creek</Authors>
+    <Description>A package containing helpful extensions to either save time or cognitive load.</Description>
+    <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+    <Copyright>Copyright (c) Josh Creek 2021.</Copyright>
+  </PropertyGroup>
+
+</Project>
