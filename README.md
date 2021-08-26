@@ -20,3 +20,16 @@ Whereas, this will result in the string `"fishmandogcat"` as the boolean passed 
 string s = "bigfishmandogcatdoghat";
 s = s.SubstringBetween("fish", "dog", true);
 ```
+
+## IEnumerable Extensions
+
+### WithIndex
+
+This method allows you to use a foreach loop and easily access the index of each item.
+
+```csharp
+foreach (var (item, index) in list.WithIndex())
+{
+    // ...
+}
+```

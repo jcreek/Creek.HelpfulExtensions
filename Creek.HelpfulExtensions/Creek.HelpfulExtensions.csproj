@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -19,6 +19,8 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryType>git</RepositoryType>
     <PackageTags>creek</PackageTags>
+    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
