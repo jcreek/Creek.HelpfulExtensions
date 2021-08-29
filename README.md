@@ -1,5 +1,10 @@
+[![Nuget](https://img.shields.io/nuget/dt/Creek.HelpfulExtensions)](https://nuget.org/packages/Creek.HelpfulExtensions)
+
 # Creek.HelpfulExtensions
+
  A package containing helpful extensions to either save time or cognitive load.
+
+ This is available on NuGet
 
 ## String Extensions
 
