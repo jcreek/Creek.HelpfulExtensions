@@ -6,7 +6,7 @@
 
  A package containing helpful extensions to either save time or cognitive load.
 
- This is available on NuGet
+ This is available on NuGet - just click one of the buttons above, or search for `Creek.HelpfulExtensions` in Visual Studio.
 
 ## String Extensions
 
