@@ -1,4 +1,6 @@
+[![Nuget](https://img.shields.io/nuget/v/Creek.HelpfulExtensions)](https://nuget.org/packages/Creek.HelpfulExtensions)
 [![Nuget](https://img.shields.io/nuget/dt/Creek.HelpfulExtensions)](https://nuget.org/packages/Creek.HelpfulExtensions)
+
 
 # Creek.HelpfulExtensions
 
