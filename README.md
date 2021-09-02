@@ -40,3 +40,31 @@ foreach (var (item, index) in list.WithIndex())
     // ...
 }
 ```
+
+## DateTime Extensions
+
+### SystemTime.Now
+
+This is technically not an extension, but fits well in this package. It's taken from [this blog](https://lostechies.com/jimmybogard/2008/11/09/systemtime-versus-isystemclock-dependencies-revisited/). This method exposes DateTime.Now as an instance of a function, that can be replaced in tests.
+
+If you want to replace SystemTime.Now in a test you can do it like this:
+
+```csharp
+[Test]
+public void Should_test_something_here()
+{
+    var systemTimeDate = new DateTime(2021, 9, 2);
+    SystemTime.Now = () => new DateTime(2021, 9, 2);
+
+    DateTime dateTimeToBeTested = systemTimeDate;
+
+    // ...
+}
+```
+
+You can also set SystemTime.Now to any function that returns a DateTime:
+
+```csharp
+var startDate = new DateTime(2021, 9, 2);
+SystemTime.Now = () => startDate.AddDays(2);
+```
