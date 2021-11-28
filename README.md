@@ -68,3 +68,69 @@ You can also set SystemTime.Now to any function that returns a DateTime:
 var startDate = new DateTime(2021, 9, 2);
 SystemTime.Now = () => startDate.AddDays(2);
 ```
+
+## Exception Extensions
+
+### BaseExceptionMessage
+
+Returns a string of the message of the first/root/base exception in an exception stack.
+
+```csharp
+try
+{
+    ...
+}
+catch (Exception ex)
+{
+    string baseExceptionMessage = ex.BaseExceptionMessage();
+    ...
+}
+```
+
+### BaseExceptionMessageAndStackTrace
+
+Returns a single string of the message and stack trace of the first/root/base exception in an exception stack.
+
+```csharp
+try
+{
+    ...
+}
+catch (Exception ex)
+{
+    string baseExceptionMessageAndStackTrace = ex.BaseExceptionMessageAndStackTrace();
+    ...
+}
+```
+
+### AllInnerExceptionMessages
+
+Returns a list of the exception messages of each nested exception in an exception stack.
+
+```csharp
+try
+{
+    ...
+}
+catch (Exception ex)
+{
+    List<string> allInnerExceptionMessages = ex.AllInnerExceptionMessages();
+    ...
+}
+```
+
+### AllInnerExceptionMessagesAndStackTraces
+
+Returns a list of single strings of the message and stack trace of each nested exception in an exception stack.
+
+```csharp
+try
+{
+    ...
+}
+catch (Exception ex)
+{
+    List<string> allInnerExceptionMessagesAndStackTraces = ex.AllInnerExceptionMessagesAndStackTraces();
+    ...
+}
+```
