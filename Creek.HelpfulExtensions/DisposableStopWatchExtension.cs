@@ -53,6 +53,6 @@ namespace Creek.HelpfulExtensions
 
     public static class DisposableStopWatchExtension
     {
-        public static DisposableStopWatch DisposableStopWatch(this ILogger logger, string msg = null) => new DisposableStopWatch(logger, msg);
+        public static DisposableStopWatch DisposableStopWatch(this ILogger logger, string message = null, bool useConsole = false) => new DisposableStopWatch(logger, message, useConsole);
     }
 }

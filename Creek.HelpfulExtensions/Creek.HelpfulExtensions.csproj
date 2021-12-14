@@ -19,8 +19,8 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryType>git</RepositoryType>
     <PackageTags>creek</PackageTags>
-    <Version>1.4.0</Version>
-    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <Version>1.4.1</Version>
+    <AssemblyVersion>1.4.0.1</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
