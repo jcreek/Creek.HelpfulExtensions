@@ -157,4 +157,13 @@ using (_logger.DisposableStopWatch("A message", true))
 }
 ```
 
+You can also make use of it without a logger for very barebones console applications.
+
+```csharp
+using ("A message".DisposableStopWatch())
+{
+    ...
+}
+```
+
 You get a `Start:` log, with the message appended if you've passed it, and once your code within the using block has run you get `Complete:` with the messaged appended if you've passed it, then on the same line `Elapsed:` and the time elapsed in HH:MM:SS:MS..... format.
