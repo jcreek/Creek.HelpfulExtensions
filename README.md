@@ -134,3 +134,27 @@ catch (Exception ex)
     ...
 }
 ```
+
+## Logging Extensions
+
+### DisposableStopWatchExtension
+
+This extends `ILogger` with a timer that can wrap code with a using statement. It was heavily inspired by James Curran's [blog post](https://honestillusion.com/2021/12/14/Simple-timings.html). With this extension you can quickly, easily and cleanly stick `StopWatch` objects around code that you wish to time.
+
+```csharp
+using (_logger.DisposableStopWatch())
+{
+    ...
+}
+```
+
+It takes in additional parameters for a message and whether or not to also write to a Console for quick and dirty iterating.
+
+```csharp
+using (_logger.DisposableStopWatch("A message", true))
+{
+    ...
+}
+```
+
+You get a `Start:` log, with the message appended if you've passed it, and once your code within the using block has run you get `Complete:` with the messaged appended if you've passed it, then on the same line `Elapsed:` and the time elapsed in HH:MM:SS:MS..... format.
